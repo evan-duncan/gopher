@@ -15,13 +15,5 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-mod gopher;
-use gopher::server::*;
-
-fn main() {
-    let _server: Server = Server {
-        hostname: "foo".to_string(),
-        port: 70,
-    };
-    println!("Hello, world!");
-}
+pub mod item;
+pub mod server;
